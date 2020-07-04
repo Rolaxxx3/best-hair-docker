@@ -6,9 +6,9 @@ services:
     ports:
       - '8087:3000'
     links:
-      - best_hair_database
+      - best-hair-db
   best-hair-db:
-    container_name: db-best-hair
+    container_name: best-hair-db
     image: mongo
     ports:
       - '27017:27017'
