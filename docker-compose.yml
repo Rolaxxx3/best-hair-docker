@@ -7,6 +7,8 @@ services:
       - '8087:3000'
     links:
       - best-hair-db
+    environment:
+      - MONGODB_URI=best-hair-db
   best-hair-db:
     container_name: best-hair-db
     image: mongo
